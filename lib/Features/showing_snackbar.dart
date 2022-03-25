@@ -49,8 +49,8 @@ class MySnackBar extends StatelessWidget {
                     isDismissible: true,
                     dismissDirection: DismissDirection.horizontal,
                     forwardAnimationCurve: Curves.bounceInOut,
-                  //  duration: Duration(microseconds: 5000),
-                    icon: Icon(Icons.send,
+                    //duration: Duration(microseconds: 500),
+                    icon: const Icon(Icons.send,
                     color: Colors.white,
                     ),
                     shouldIconPulse: false,
@@ -68,11 +68,15 @@ class MySnackBar extends StatelessWidget {
                     overlayBlur: 2,
                    // overlayColor: Colors.grey.withOpacity(0.5),
                   //  showProgressIndicator: true,
+                    snackbarStatus: (value){
+                      print(value);
 
+                    }
                   );
                 },
               child: const Text("Show SnackBar"),
             ),
+
 
 
 
