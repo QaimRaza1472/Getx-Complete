@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,13 +8,17 @@ class ShowDialog1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+        title: const Text("Show Dialog"),
+      ),
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
-              onPressed:(){
+              onPressed: () {
                 Get.defaultDialog(
                   title: "Dialog Title",
                   titleStyle: const TextStyle(
@@ -23,9 +26,9 @@ class ShowDialog1 extends StatelessWidget {
                     fontSize: 25,
                   ),
                   middleText: "This is middle text",
-                //  backgroundColor: Colors.yellow,
+                  //  backgroundColor: Colors.yellow,
                   radius: 50,
-          /*        content: Row(
+                  /*        content: Row(
                     children: const [
                       CircularProgressIndicator(
                         color: Colors.red,
@@ -43,51 +46,41 @@ class ShowDialog1 extends StatelessWidget {
                   cancelTextColor: Colors.black,
                   textConfirm: "Confirm",
                   confirmTextColor: Colors.white,
-                  onCancel: (){},
-                  onConfirm: (){},
+                  onCancel: () {},
+                  onConfirm: () {},
                   buttonColor: Colors.black,
 
-                  cancel: Text("Cancels",
-                  style: TextStyle(
-                    color: Colors.yellow,
-                    fontSize: 17,
+                  cancel: const Text(
+                    "Cancels",
+                    style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 17,
+                    ),
                   ),
-
-                  ),
-                  confirm: Text("Confirm",
+                  confirm: const Text(
+                    "Confirm",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 17,
                     ),
-
                   ),
                   actions: [
                     RaisedButton(
-                        onPressed: (){
-                          Get.back();
-                        },
-                      child: Text("Action-1",
+                      onPressed: () {
+                        Get.back();
+                      },
+                      child: const Text(
+                        "Action-1",
                       ),
-
                     ),
                     RaisedButton(
-                      onPressed: (){
-                      },
-                      child: Text("Action-2",
+                      onPressed: () {},
+                      child: const Text(
+                        "Action-2",
                       ),
                     ),
                   ],
                   barrierDismissible: false,
-
-
-
-
-
-
-
-
-
-
                 );
               },
               child: const Text("Show Dialog"),

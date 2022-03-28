@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:getx_complete/Features/bottom_sheet.dart';
 import 'package:getx_complete/Features/testing_share.dart';
+import 'Features/routing.dart';
 import 'Features/show_dialog.dart';
 import 'Features/showing_snackbar.dart';
 import 'package:get/get.dart';
@@ -11,6 +13,7 @@ void main() {
   runApp(const MyApp());
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -21,12 +24,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
+
       //home:  MySnackBar(),
-      home: ShowDialog1(),
+      //home: ShowDialog1(),
+      //home: BottomSheet1(),
+      home:  Navigation1(),
     );
+
   }
 }
 
