@@ -17,12 +17,10 @@ class MySnackBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RaisedButton(
-                onPressed:(){
-                  Get.snackbar(
-                      "Snackbar Title",
-                      "This will be SnackBar Message",
+              onPressed: () {
+                Get.snackbar("Snackbar Title", "This will be SnackBar Message",
                     snackPosition: SnackPosition.BOTTOM,
-                 /*   titleText: Text("Another Title"),
+                    /*   titleText: Text("Another Title"),
                     messageText: Text('Another Message',
                     style: TextStyle(
                       color: Colors.yellow,
@@ -32,14 +30,12 @@ class MySnackBar extends StatelessWidget {
                     backgroundColor: Colors.black,
                     borderRadius: 30,
                     margin: const EdgeInsets.all(10),
-                   //   maxWidth: 100
-                   //  animationDuration: const Duration(microseconds: 3000 ),
-                    backgroundGradient: const LinearGradient(
-                        colors: [
-                          Colors.red,
-                          Colors.green,
-                        ]
-                    ),
+                    //   maxWidth: 100
+                    //  animationDuration: const Duration(microseconds: 3000 ),
+                    backgroundGradient: const LinearGradient(colors: [
+                      Colors.red,
+                      Colors.green,
+                    ]),
                     borderColor: Colors.purple,
                     borderWidth: 1,
                     boxShadows: [
@@ -54,42 +50,30 @@ class MySnackBar extends StatelessWidget {
                     dismissDirection: DismissDirection.horizontal,
                     forwardAnimationCurve: Curves.bounceInOut,
                     //duration: Duration(microseconds: 500),
-                    icon: const Icon(Icons.send,
-                    color: Colors.white,
+                    icon: const Icon(
+                      Icons.send,
+                      color: Colors.white,
                     ),
                     shouldIconPulse: false,
                     leftBarIndicatorColor: Colors.white,
                     mainButton: TextButton(
-                        onPressed: (){
-                          print("Retry Clicked");
-                        },
-                        child: Text("Retry"),
+                      onPressed: () {
+                        print("Retry Clicked");
+                      },
+                      child: Text("Retry"),
                     ),
-                    onTap: (value){
+                    onTap: (value) {
                       print("Snackbar Clicked");
-
                     },
                     overlayBlur: 2,
-                   // overlayColor: Colors.grey.withOpacity(0.5),
-                  //  showProgressIndicator: true,
-                    snackbarStatus: (value){
+                    // overlayColor: Colors.grey.withOpacity(0.5),
+                    //  showProgressIndicator: true,
+                    snackbarStatus: (value) {
                       print(value);
-
-                    }
-                  );
-                },
+                    });
+              },
               child: const Text("Show SnackBar"),
             ),
-
-
-
-
-
-
-
-
-
-
           ],
         ),
       ),

@@ -18,25 +18,24 @@ class BottomSheet1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FlatButton(
-              onPressed: (){
+              onPressed: () {
                 Get.changeTheme(ThemeData.dark());
                 print("Hello Button Pressed");
               },
-                child: Container(
-                    height: 30,
-                    width:110,
-                    color: Colors.cyan,
-                    child: const Center(child: Text("Change Theme"))),
-
+              child: Container(
+                  height: 30,
+                  width: 110,
+                  color: Colors.cyan,
+                  child: const Center(child: Text("Change Theme"))),
             ),
             RaisedButton(
-              onPressed:(){
+              onPressed: () {
                 Get.bottomSheet(
                   Container(
                     color: Colors.yellow,
-                /*    height: 700,
+                    /*    height: 700,
                     width: 600,
-                    
+
                     decoration: BoxDecoration(
                       color: Colors.yellow,
                       borderRadius: BorderRadius.only(
@@ -50,22 +49,19 @@ class BottomSheet1 extends StatelessWidget {
                         ListTile(
                           leading: const Icon(Icons.wb_sunny_outlined),
                           title: const Text("Light Theme"),
-                        onTap: ()=>{
+                          onTap: () => {
                             Get.changeTheme(ThemeData.light()),
-                        },
+                          },
                         ),
                         ListTile(
                           tileColor: Colors.purple,
                           //selectedColor: Colors.red,
                           leading: const Icon(Icons.wb_sunny),
                           title: const Text("Dark Theme"),
-                          onTap: ()=>{
+                          onTap: () => {
                             Get.changeTheme(ThemeData.dark()),
-                            },
+                          },
                         ),
-
-
-
                       ],
                     ),
                   ),
@@ -81,13 +77,7 @@ class BottomSheet1 extends StatelessWidget {
                   ),
 
                   //enableDrag: false,
-
                 );
-
-                
-                
-                
-
               },
               child: const Text("Bottom Sheet"),
             ),

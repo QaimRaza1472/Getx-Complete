@@ -9,7 +9,7 @@ class ShowDialog1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          centerTitle: true,
+        centerTitle: true,
         title: const Text("Show Dialog"),
       ),
       body: Center(
