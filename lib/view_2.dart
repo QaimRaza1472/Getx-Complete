@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_complete/texting_getx.dart';
-
 
 
 ///  Build Widget run everytime when the state changed
 ///  used setState Method
+///
+///
+///
 ///
 ///
 ///
@@ -19,9 +19,7 @@ class View2 extends StatefulWidget {
 
 class _View2State extends State<View2> {
   //var student = Student();
-
   int count=0;
-
 
   @override
   void initState() {
@@ -32,7 +30,6 @@ class _View2State extends State<View2> {
     setState(() {
       count++;
     });
-
   }
 
 
@@ -67,10 +64,6 @@ class _View2State extends State<View2> {
               },
               child: const Text("Counter"),
             ),
-
-
-
-
 
           ],
         ),

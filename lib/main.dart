@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:getx_complete/Features/Internationalization/Messages.dart';
 import 'package:getx_complete/Features/bottom_sheet.dart';
 import 'package:getx_complete/Features/testing_share.dart';
-import 'package:getx_complete/view.dart';
+import 'package:getx_complete/ObX/Views/view.dart';
 import 'package:getx_complete/view_2.dart';
+import 'Features/Internationalization/localization_screen.dart';
 import 'Features/routing.dart';
 import 'Features/show_dialog.dart';
 import 'Features/showing_snackbar.dart';
 import 'package:get/get.dart';
+import 'GetX<Controller>/Views/conuter_screen.dart';
+import 'Screens/home_screen.dart';
+import 'Simple State Management/Controllers/simple_state_management.dart';
+
+
+
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +28,13 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'GetX Complete',
+
+      translations: Messages(),    //Our Translations
+      locale: Locale('en','US'),   //Default locale //to get device locale Get.deviceLocale
+      fallbackLocale: Locale('en','US'), //fallback locale if wrong locale found
+
+
+
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -29,8 +44,15 @@ class MyApp extends StatelessWidget {
       //home: BottomSheet1(),
       //home: Navigation1(),
 
-      home: View(),
+      //home: View(),
       // home: View2(),
+        //home: CounterScreen(),
+
+      // home: SimpleScreen(),
+
+        //home:HomeScreen(),
+
+       home: LocalizationScreen(),
 
 
     );

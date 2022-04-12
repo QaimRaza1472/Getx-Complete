@@ -31,6 +31,7 @@ class Navigation1 extends StatelessWidget {
                 var data = await Get.to(
                   HomeScreen(),
                   transition: Transition.circularReveal,
+
                   // transition: Transition.zoom,
                   duration: Duration(milliseconds: 2000),
                   fullscreenDialog: true,

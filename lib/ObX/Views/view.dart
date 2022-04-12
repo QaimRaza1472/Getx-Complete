@@ -1,6 +1,12 @@
+
+///   -------------------    Obx   --------------------------
+
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_complete/texting_getx.dart';
+import 'package:getx_complete/ObX/Controller/texting_getx.dart';
+import '../Controller/my_controller.dart';
+
 
 
 class View extends StatelessWidget {
@@ -10,6 +16,10 @@ class View extends StatelessWidget {
 
    Student student = Get.put(Student());
 
+   MyController myController=Get.put(MyController());
+
+
+
 
 
 // 0139 790 220 1503
@@ -18,7 +28,6 @@ class View extends StatelessWidget {
 
    @override
   Widget build(BuildContext context) {
-    print("    ");
     return  Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
@@ -33,7 +42,11 @@ class View extends StatelessWidget {
             Obx((){
                 return Column(
                   children: [
-                    Text('Student Name: ${student.name.value}',
+                    Text(
+                      'Student Name: ${student.name.value}',
+
+                      //'Student Name: ${myController.my_student.value.name}',
+
                      style: const TextStyle(
                     color: Colors.red,
                     fontSize: 29,
@@ -49,7 +62,7 @@ class View extends StatelessWidget {
                     ),
                     Container(
                       height:250,
-                      color: Colors.yellow,
+                     // color: Colors.yellow,
                       width:double.infinity,
                       child: ListView.builder(
                         itemCount:student.student_name.length,
@@ -82,18 +95,21 @@ class View extends StatelessWidget {
                           }
                           ),
                     ),
-
-
-
                   ],
                 );
           },
             ),
             RaisedButton(
               onPressed: () {
+
                 student.uper();
+
+                //myController.convertToUpperCase();
+
                 print("Pressed ${student.age.value}");
-              },
+
+                },
+
               child: const Text("Upper"),
             ),
           ],
