@@ -10,6 +10,8 @@ import 'Features/show_dialog.dart';
 import 'Features/showing_snackbar.dart';
 import 'package:get/get.dart';
 import 'GetX<Controller>/Views/conuter_screen.dart';
+import 'Getx Project/ApiModule/api_service.dart';
+import 'Getx Project/Views/product_list_view.dart';
 import 'Screens/home_screen.dart';
 import 'Simple State Management/Controllers/simple_state_management.dart';
 
@@ -17,8 +19,11 @@ import 'Simple State Management/Controllers/simple_state_management.dart';
 
 
 void main() {
+  //ApiServices.fetchProducts();
   runApp(const MyApp());
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -28,16 +33,14 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'GetX Complete',
-
       translations: Messages(),    //Our Translations
-      locale: Locale('en','US'),   //Default locale //to get device locale Get.deviceLocale
-      fallbackLocale: Locale('en','US'), //fallback locale if wrong locale found
-
-
-
+      locale: const Locale('en','US'),   //Default locale //to get device locale Get.deviceLocale
+      fallbackLocale: const Locale('en','US'), //fallback locale if wrong locale found
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+
+
 
       //home:  MySnackBar(),
       //home: ShowDialog1(),
@@ -52,7 +55,9 @@ class MyApp extends StatelessWidget {
 
         //home:HomeScreen(),
 
-       home: LocalizationScreen(),
+      // home: LocalizationScreen(),
+
+      home: ProductListView(),
 
 
     );

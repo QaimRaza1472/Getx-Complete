@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-
 import 'localization_controller.dart';
+
+
+
+
 
 class LocalizationScreen extends StatelessWidget {
   LocalizationScreen({Key? key}) : super(key: key);
@@ -56,18 +59,19 @@ class LocalizationScreen extends StatelessWidget {
               ),
               RaisedButton(
                 onPressed: () {
-                  myLanguage.changeLanguage('hi', 'IN');
+                  myLanguage.changeLanguage('ur', 'PK');
                 },
-                child: Text('Hindi'),
+                child: const Text('Urdu'),
               ),
               const SizedBox(
                 height: 12,
               ),
+
               RaisedButton(
                 onPressed: () {
-                  myLanguage.changeLanguage('ur', 'PK');
+                  myLanguage.changeLanguage('hi', 'IN');
                 },
-                child: Text('Urdu'),
+                child: const Text('Hindi'),
               ),
             ],
           ),

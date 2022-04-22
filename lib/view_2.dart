@@ -36,7 +36,7 @@ class _View2State extends State<View2> {
 
   @override
   Widget build(BuildContext context) {
-    print("---------------------Build Widget-----------------");
+    print("--------------------- Build Widget -----------------");
     return  Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
@@ -60,9 +60,7 @@ class _View2State extends State<View2> {
                onPressed: () {
                   Increment();
                  print("------------    Button Pressed  ---------------");
-
-              },
-              child: const Text("Counter"),
+              },child: const Text("Counter"),
             ),
 
           ],
