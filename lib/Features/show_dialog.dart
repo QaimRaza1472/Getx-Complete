@@ -17,7 +17,7 @@ class ShowDialog1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Get.defaultDialog(
                   title: "Dialog Title",
@@ -65,7 +65,7 @@ class ShowDialog1 extends StatelessWidget {
                     ),
                   ),
                   actions: [
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () {
                         Get.back();
                       },
@@ -73,7 +73,7 @@ class ShowDialog1 extends StatelessWidget {
                         "Action-1",
                       ),
                     ),
-                    RaisedButton(
+                    ElevatedButton(
                       onPressed: () {},
                       child: const Text(
                         "Action-2",

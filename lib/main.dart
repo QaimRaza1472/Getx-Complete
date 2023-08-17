@@ -23,8 +23,6 @@ void main() {
   runApp(const MyApp());
 }
 
-
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   // This widget is the root of your application.
@@ -47,7 +45,7 @@ class MyApp extends StatelessWidget {
       //home: BottomSheet1(),
       //home: Navigation1(),
 
-      //home: View(),
+      home: View(),
       // home: View2(),
         //home: CounterScreen(),
 
@@ -57,7 +55,7 @@ class MyApp extends StatelessWidget {
 
       // home: LocalizationScreen(),
 
-      home: ProductListView(),
+       //home: ProductListView(),
 
 
     );

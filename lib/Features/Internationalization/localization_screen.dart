@@ -39,7 +39,7 @@ class LocalizationScreen extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   myLanguage.changeLanguage('en', 'US');
                 },
@@ -48,7 +48,7 @@ class LocalizationScreen extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   myLanguage.changeLanguage('fr', 'FR');
                 },
@@ -57,7 +57,7 @@ class LocalizationScreen extends StatelessWidget {
               const SizedBox(
                 height: 12,
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   myLanguage.changeLanguage('ur', 'PK');
                 },
@@ -67,7 +67,7 @@ class LocalizationScreen extends StatelessWidget {
                 height: 12,
               ),
 
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   myLanguage.changeLanguage('hi', 'IN');
                 },

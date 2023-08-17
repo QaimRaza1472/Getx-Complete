@@ -52,8 +52,8 @@ class SimpleScreen extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            RaisedButton(
-              padding: EdgeInsets.all(14),
+            ElevatedButton(
+             // padding: EdgeInsets.all(14),
               onPressed: () {
                 myController.increment();
               },

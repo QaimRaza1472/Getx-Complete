@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               fontWeight: FontWeight.w900,
             ),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Get.back(result: "This is my data");
               },

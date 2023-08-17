@@ -56,7 +56,7 @@ class _View2State extends State<View2> {
                     ),
                   ),
 
-                RaisedButton(
+            ElevatedButton(
                onPressed: () {
                   Increment();
                  print("------------    Button Pressed  ---------------");

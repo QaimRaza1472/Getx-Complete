@@ -17,7 +17,7 @@ class BottomSheet1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            FlatButton(
+            ElevatedButton(
               onPressed: () {
                 Get.changeTheme(ThemeData.dark());
                 print("Hello Button Pressed");
@@ -28,7 +28,7 @@ class BottomSheet1 extends StatelessWidget {
                   color: Colors.cyan,
                   child: const Center(child: Text("Change Theme"))),
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Get.bottomSheet(
                   Container(

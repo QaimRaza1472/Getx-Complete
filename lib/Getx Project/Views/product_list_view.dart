@@ -74,17 +74,10 @@ class ProductListView extends StatelessWidget {
                                 color: Colors.grey
                             ),
                           ),
-
-
-
-
-
                         ],
                       ),
                   ),
                   Container(color: Colors.grey[200],),
-
-
                 ],
               ),
             ],

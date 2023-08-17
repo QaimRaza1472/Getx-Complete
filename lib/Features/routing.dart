@@ -25,8 +25,8 @@ class Navigation1 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
-              color: Colors.green,
+            ElevatedButton(
+              //color: Colors.green,
               onPressed: () async {
                 var data = await Get.to(
                   HomeScreen(),

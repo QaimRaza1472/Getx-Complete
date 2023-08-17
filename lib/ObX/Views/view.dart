@@ -61,7 +61,7 @@ class View extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      height:250,
+                      height:350,
                      // color: Colors.yellow,
                       width:double.infinity,
                       child: ListView.builder(
@@ -84,7 +84,7 @@ class View extends StatelessWidget {
                                         '${student.student_name[index]}',
                                         style: const TextStyle(
                                           color: Colors.black,
-                                          fontSize: 29,
+                                          fontSize: 24,
                                           fontWeight: FontWeight.w900,
                                         ),
                                       ),
@@ -99,7 +99,7 @@ class View extends StatelessWidget {
                 );
           },
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
 
                 student.uper();

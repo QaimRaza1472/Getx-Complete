@@ -16,16 +16,18 @@ class MySnackBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 Get.snackbar("Snackbar Title", "This will be SnackBar Message",
                     snackPosition: SnackPosition.BOTTOM,
+
                     /*   titleText: Text("Another Title"),
                     messageText: Text('Another Message',
                     style: TextStyle(
                       color: Colors.yellow,
                     ),
                     ),*/
+
                     colorText: Colors.red,
                     backgroundColor: Colors.black,
                     borderRadius: 30,
